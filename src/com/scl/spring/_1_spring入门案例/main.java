@@ -1,7 +1,6 @@
-package com.zjazn.spring._1_spring入门案例;
+package com.scl.spring._1_spring入门案例;
 
 import org.springframework.beans.factory.BeanFactory;
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class main {

@@ -1,4 +1,4 @@
-package com.zjazn.spring._1_spring入门案例;
+package com.scl.spring._1_spring入门案例;
 
 public class User {
     public void run() {
