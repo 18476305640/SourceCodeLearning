@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="_1_构造方法注入" removed="false">
+          <file>file://$MODULE_DIR$/src/com/scl/spring/_2_ioc管理bean/_1_xml方式/_2_注入属性/_2_构造方法注入/_1_构造方法注入.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
