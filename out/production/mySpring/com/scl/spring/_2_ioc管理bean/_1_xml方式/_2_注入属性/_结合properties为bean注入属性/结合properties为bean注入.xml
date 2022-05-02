@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                          http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <!--上面加入了两行
+    xmlns:context="http://www.springframework.org/schema/context"
+
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    -->
+    <context:property-placeholder location="classpath:com/scl/spring/_2_ioc管理bean/_1_xml方式/_2_注入属性/_结合properties为bean注入属性/jdbc.properties" />
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClassName" value="${prop.dirverClass}" ></property>
+        <property name="url" value="${prop.url}" ></property>
+        <property name="username" value="${prop.userName}" ></property>
+        <property name="password" value="${prop.password}" ></property>
+    </bean>
+</beans>
