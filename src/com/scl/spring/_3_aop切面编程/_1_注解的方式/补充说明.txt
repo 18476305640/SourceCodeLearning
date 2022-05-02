@@ -1,0 +1,24 @@
+1.相同的切入点抽取(切入表达式 提取)
+    @Pointcut(value = "execution(* com.atguigu.spring5.aopanno.User.add(..))")
+    public void pointdemo() { }
+
+    @Before(value = "pointdemo()") //使用
+    public void before() {
+        System.out.println("before.........");
+    }
+
+2.在增强类上面添加注解 @Order(数字类型值)，数字类型值越小优先级越高
+    @Component
+    @Aspect //生成代理对象
+    @Order(10)
+    public class UserProxy {...} //第二个
+
+    @Component
+    @Aspect //生成代理对象
+    @Order(1)
+    public class UserProxy {...} //第一个
+
+    输出：https://cdn.jsdelivr.net/gh/18476305640/typora@master/image/16514952115361651495211425.png
+
+
+
