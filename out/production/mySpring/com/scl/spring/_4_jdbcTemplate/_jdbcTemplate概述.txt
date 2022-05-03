@@ -1,0 +1,2 @@
+1、什么是JdbcTemplate
+（1）Spring框架对JDBC进行封装，使用JdbcTemplate方便实现对数据库操作
