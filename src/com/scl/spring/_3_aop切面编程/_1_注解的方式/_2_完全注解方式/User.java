@@ -6,5 +6,6 @@ import org.springframework.stereotype.Component;
 public class User {
     public void add() {
         System.out.println("[切入点主体 add....]");
+        int i = 1/0;
     }
 }

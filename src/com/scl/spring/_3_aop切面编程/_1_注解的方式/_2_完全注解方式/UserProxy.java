@@ -1,5 +1,6 @@
 package com.scl.spring._3_aop切面编程._1_注解的方式._2_完全注解方式;
 
+import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.springframework.stereotype.Component;
@@ -23,9 +24,9 @@ public class UserProxy {
     public void after() {//后置通知
         System.out.println("最终通知 after....");
     }
-    @AfterThrowing(value = "execution(* com.scl.spring._3_aop切面编程._1_注解的方式._2_完全注解方式.User.add(..))")
-    public void afterThrowing() {//后置通知
-        System.out.println("最终通知 afterThrowing....");
+    @AfterThrowing(value = "execution(* com.scl.spring._3_aop切面编程._1_注解的方式._2_完全注解方式.User.add(..))",throwing = "e")
+    public void afterThrowing(JoinPoint joinPoint,Exception e) {//异常通知
+        System.out.println("异常通知 afterThrowing...."+e.getMessage());
     }
     @Around(value = "execution(* com.scl.spring._3_aop切面编程._1_注解的方式._2_完全注解方式.User.add(..))")
     public void around(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {

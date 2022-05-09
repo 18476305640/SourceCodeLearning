@@ -31,6 +31,10 @@ http://www.springframework.org/schema/aop http://www.springframework.org/schema/
     </bean>
 
 
+
+<!--    &lt;!&ndash;开启事务注解&ndash;&gt;-->
+<!--    <tx:annotation-driven transaction-manager="transactionManager"></tx:annotation-driven>-->
+
     <!--配置切入点和切面，代替事务的注解-->
     <!--配置通知-->
     <tx:advice id="txadvice">

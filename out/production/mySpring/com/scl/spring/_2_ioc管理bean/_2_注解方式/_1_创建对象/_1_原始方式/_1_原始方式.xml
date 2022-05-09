@@ -8,8 +8,8 @@
     <!--示例1
     扫描所以注解
     -->
-    <context:component-scan base-package="com.scl.spring._2_ioc管理bean._2_注解方式._1_创建对象._1_原始方式">
-    </context:component-scan>
+    <context:component-scan base-package="com.scl.spring._2_ioc管理bean._2_注解方式._1_创建对象._1_原始方式" />
+
 
 
     <!--示例 2
