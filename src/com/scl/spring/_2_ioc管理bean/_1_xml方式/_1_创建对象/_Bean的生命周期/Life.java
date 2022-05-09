@@ -16,6 +16,6 @@ public class Life {
         System.out.println("第三步 执行初始化方法");
     }
     public void destroyMethod() {
-        System.out.println("第五步 执行初始化方法");
+        System.out.println("第五步 执行销毁方法");
     }
 }
